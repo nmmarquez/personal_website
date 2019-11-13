@@ -1,0 +1,170 @@
+---
+title: "Homework 3"
+subtitle: "Soc 225: Data & Society"
+author: "[PUT YOUR NAME HERE]"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+Write all code in the chunks provided!
+
+Remember to unzip to a real directory before running everything!
+
+To submit your assignment, knit to html and submit the output file.
+
+Question one should be roughly analogous to what we've done in class. There are hints at the bottom of this document if you get stuck. If you still can't figure it out, go to google/stack exchange/ask a friend. Finally, email me or come to office hours :).
+
+## Problem 1: Preparing and plotting data
+
+### 1.1: Set up your environment
+
+Set up your environment by: 
+
+A. Loading the tidyverse  
+B. Reading the Airbnb data: There's another new data set in the `data/` folder. This one has almost 10,000 cases and the census data by zipcode. These data are from New York City, not Seattle! 
+
+```{r}
+library(tidyverse)
+
+```
+  
+I've given you absolute populations and proportions for the racial composition of the zipcode for each listing. I've also made a variable called 'modal_race' which is the race with the largest proportion in that neighborhood. 
+
+These variables are all in the last columns of the data set---you can try selecting them and using `summary()` to get a sense for what they contain.
+
+### 1.2: Turn `price` into a number
+
+`price` includes dollar signs, which means that R interprets it as a character. We want it to be a numeric variable instead. Turn `price` into a numeric variable in the chunk below.
+
+There are a few ways to do this using `tidyverse` functions. See the hints below for some suggestions.
+
+```{r}
+
+```
+
+### 1.3: Make a scatterplot
+
+Use a scatter plot to compare how unit prices change with the proportion of a particular race. 
+
+Bonus: try grouping by zipcode (in any fashion) for this plot
+
+```{r}
+
+```
+  
+
+### 1.4: Make a boxplot
+  
+Use the `modal_race` variable to plot a boxplot comparing race and price. You may have to look up how to make a boxplot in `ggplot2`---what geom do you need?
+
+Bonus: try showing how this comparison differs by neighborhood group.
+
+```{r}
+
+```
+
+### 1.5: Interpret your answer
+
+Interpret your answer to 1.4. Check the hints if you need help.
+
+*Your answer should be at least a few sentences here*
+
+### Bonus: how did we make the data?
+
+There's another file in the data folder, census.csv. Read it into R and have a look at it.
+
+Download the full listings for New York City from Inside Airbnb, and see if you can join the Census data to it by zipcode using `left_join`. You'll have to filter out some weird values for zipcode before you can merge. 
+
+```{r}
+
+```
+
+
+## Problem 2: Plan your plots
+
+You'll need to have **2 plots** to show the class for your final project. It helps to think about what you want to present and how you'll prepare and present that using your data.
+
+In exploratory data analysis, you'll usually make more plots than you ultimately want to present. Because of that, we're asking you to make **3 plots** below, one more than necessary for the final project.
+
+*For each of the 3 plots, provide:*
+  
+A. The purpose of the plot: what do you want people to understand when they see this?  
+
+B. The type of plot: what geom functions will you use to present the plot? Why are those the best choices?  
+
+C. Limitations/biases: What is missing from this presentation? Could someone get the wrong idea? What can you do to help limit the negative possibilities here?  
+
+### Plot idea 1 
+
+A.  
+B.  
+C.  
+
+### Plot idea 2 
+
+A.  
+B.  
+C.  
+
+### Plot idea 3 
+
+A.  
+B.  
+C.  
+  
+  
+  
+## Problem 3: Make the plots 
+
+Using your plans from Problem 2, produce the plots in R. Use as many code blocks as you need. Make sure to include proper titles and labels, and think about different ways to improve your plots. 
+
+*What makes a chart good?* There are different takes on this: 
+
+- Edward Tufte says you should think about reducing chart junk and improving your data/ink ratio.
+- Zan Armstrong argues that what's "good" depends on your question, and you should make many different charts to see different things.
+- Increasingly, people like Robert Kosara (at Tableau) are treating this as an empirical question for research.
+
+Kieran Healy has a chapter on the good and the bad in data visualization, which I'd strongly encourage you to read: http://socviz.co/lookatdata.html
+
+Here's an excerpt from the beginning: 
+  
+> Some data visualizations are better than others. This chapter discusses why that is. While it is tempting to simply start laying down the law about what works and what doesn’t, the process of making a really good or really useful graph cannot be boiled down to a list of simple rules to be followed without exception in all circumstances. The graphs you make are meant to be looked at by someone. The effectiveness of any particular graph is not just a matter of how it looks in the abstract, but also a question of who is looking at it, and why.   
+
+### Plot 1:  
+
+```{r}
+
+```
+
+### Plot 2:  
+
+```{r}
+
+```
+
+### Plot 3:  
+
+```{r}
+
+```
+
+## Hints
+
+1.2 
+
+Use `mutate` for this. You can replace the original `price` variable, or name it something else. There are a couple things you can use on `price` inside the mutate: 
+
+- `parse_number`, a function in the `readr` package, does a good job of converting currency to numbers on its own.
+
+- `str_extract` with `pattern = "\\d+"`, then `as.numeric`, will extract numbers from a string, then convert the new (sub)string to a number.
+
+- `str_remove_all`, with `pattern = "[\\$|,]"`, then `as.numeric`, will remove all dollar signs and commas.
+
+1.5
+
+Check out these resources if you're not sure about interpreting box plots:
+
+https://magoosh.com/statistics/reading-interpreting-box-plots/
+
+https://www.youtube.com/watch?v=oBREri10ZHk 
+

@@ -1,0 +1,3 @@
+[submodule "themes/Academia-hugo"]
+	path = themes/Academia-hugo
+	url = https://github.com/themefisher/academia-hugo
