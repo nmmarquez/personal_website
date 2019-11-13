@@ -10,7 +10,7 @@ subtitle = "PREVIOUS ASSOCIATIONS THAT HELPED TO GATHER EXPERIENCE"
 
 # Date format for experience
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
-date_format = "Jan 2007"
+date_format = "January 2, 2006"
 
 # Experiences.
 #   Add/remove as many `[[experience]]` blocks below as you like.
