@@ -9,9 +9,9 @@ btn:
   url: https://www.dropbox.com/scl/fi/zqnn8ijbb3xhkwi5jj10t/CV.docx?dl=0&rlkey=k4daz7ql67ba6nrtw7b9p6uzw
 education:
   courses:
-  - course: PhD in Sociology (In progress)
+  - course: PhD in Sociology 
     institution: University of Washington
-    year: 2022
+    year: 2023
   - course: MPH in Health Metrics and Evaluation
     institution: University of Washington
     year: 2017
@@ -48,4 +48,4 @@ user_groups:
 - Visitors
 ---
 
-Neal Marquez is the Forecast Program manager at the Portland State University Population Research Center. His current body of work assess the population dynamics of Oregon state to make informed population projections to assist in developing future urban growth boundaries and inform future urban planning projects. Neal Marquez is also a PhD candidate in the sociology department at the University of Washington as well as a trainee with the Center for Studies in Demography & Ecology and international affiliated student of the Max Planck Research School for Population, Health and Data Science. His research interests focus on geographic inequalities of health outcomes as well as how demographic processes are influenced by geographically varying contextual factors among Hispanic populations in the United States. In addition to his graduate training in sociology, Neal also has a Masters in Public Health from the University of Washington with a focus on statistical methods and data evaluation and has worked as a statistical researcher for the Institute for Health Metrics and Evaluation.  
+Neal Marquez is the Forecast Program manager at the Portland State University Population Research Center. His current body of work assess the population dynamics of Oregon state to make informed population projections to assist in developing future urban growth boundaries and inform future urban planning projects. His research interests focus on geographic inequalities of health outcomes as well as how demographic processes are influenced by geographically varying contextual factors among Hispanic populations in the United States. In addition to his graduate training in sociology, Neal also has a Masters in Public Health from the University of Washington with a focus on statistical methods and data evaluation and has worked as a statistical researcher for the Institute for Health Metrics and Evaluation.  
