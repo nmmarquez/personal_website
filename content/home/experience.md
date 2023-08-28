@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
 title = "Experience"
-subtitle = "PREVIOUS ASSOCIATIONS THAT HELPED TO GATHER EXPERIENCE"
+subtitle = ""
 
 # Date format for experience
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
@@ -20,7 +20,7 @@ date_format = "January 2, 2006"
 
 [[experience]]
   title = "Forecasting Program Manager"
-  company = "Portland State Unioversity Population Research Center"
+  company = "Portland State University Population Research Center"
   company_url = "https://www.pdx.edu/population-research/"
   location = "Portland, Oregon"
   date_start = "2022-06-01"
