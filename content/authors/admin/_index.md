@@ -38,7 +38,7 @@ social:
   link: https://twitter.com/nealmmarquez
 - icon: google
   icon_pack: fab
-  link: https://scholar.google.com/citations?user=aVm5FlcAAAAJ
+  link: https://scholar.google.com/citations?user=_PhxSvQAAAAJ
 - icon: github
   icon_pack: fab
   link: https://github.com/nmmarquez
